@@ -1,0 +1,14 @@
+version: 1
+reporting: checks-v1    # Reports results as "GitHub Checks"
+policy:
+  pullRequests: public  # It can be restricted to known collaborators, for instance.
+tasks:
+  - taskQueueId: built-in/succeed
+    schedulerId: taskcluster-github
+    deadline: {$fromNow: '2 hours'}
+    payload: {}
+    metadata:
+      name: example-task
+      description: An **example** task
+      owner: ahal@mozilla.com
+      source: http://taskcluster/tasks/create
