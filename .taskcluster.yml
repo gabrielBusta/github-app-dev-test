@@ -10,5 +10,5 @@ tasks:
     metadata:
       name: example-task
       description: An **example** task
-      owner: ahal@mozilla.com
+      owner: gbustamante@mozilla.com
       source: http://taskcluster/tasks/create
